@@ -7,10 +7,37 @@ body {
 
 button{
     background-color: white;
-    padding: 5px;
+    padding: 10px;
+    font-size: 35px;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    p{
+        font-size: 35px;
+        border: 1px solid #000;
+        border-radius: 100px;
+        padding: 10px;
+    }
+    input{
+        width: 300px;
+        height: 70px;
+        font-size: 35px;
+    }
+}
+.story{
+    display: flex;
+    align-items: center;
+    font-size: 29px;
+    textarea{
+        font-size: 30px;
+    }
 }
 .calcFunc 
 {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }

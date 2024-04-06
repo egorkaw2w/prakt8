@@ -1,48 +1,55 @@
-
 <!DOCTYPE html>
-<htmlte lang="en">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div>
-        <button>история</button>
-    </div>
-   <form action="">
-    <input type="number" name="первое число" id="">
-    <p></p>
-    <input type="number" name="второе число" id="">
-   </form>
-   <div class="calcFunc">
-    <div>
-        <button> + </button>
-        <button> - </button>
-        <button> * </button>
-        <button> / </button>
-    </div>
-    <div>
-     <button> ^ </button>
-     <button> √ </button>
-     <button> % </button>
-    iv>
-    v>
-     <button> sin </button>
-     <button> cos </button>
-     <button> tan </button>
-     <button> ctg </button>
-    iv>
-    v>
-     <button> e </button>
-     <button> Pi </button>
-    iv>
-    v>
-     <button> log </button>
-    iv>
-   </div class="calcFunc">
-   
-   <script src="script.js"></script>
+<main>
+        <div class="story">
+            <label for="history"> История</label>
+            <textarea id="history"></textarea>
+        </div>
+        <form action="">
+            <input type="text" placeholder="первое число" name="первое число" id="first">
+            <p id="symbol"> </p>
+            <input type="text" placeholder="второе число" name="второе число" id="second">
+            <p id="result"></p>
+        </form>
+        <div class="calcFunc">
+            <div>
+                <button onclick="plusing(this)">+</button>
+                <button onclick="minusing(this)">-</button>
+                <button onclick="umnzh(this)">*</button>
+                <button onclick="del(this)">/</button>
+            </div>
+            <div>
+                <button onclick="step(this)"> ^ </button>
+                <button onclick="sqrt(this)"> √ </button>
+                <button onclick="persent(this)"> % </button>
+            </div>
+            <div>
+                <button onclick="sin(this)"> sin </button>
+                <button onclick="cos(this)"> cos </button>
+                <button onclick="tan(this)"> tan </button>
+                <button onclick="ctg(this)"> ctg </button>
+            </div>
+            <div>
+                <button onclick="e(this)"> e </button>
+                <button onclick="Pi(this)"> Pi </button>
+            </div>
+            <div>
+                <button onclick="log(this)"> log </button>
+            </div>
+        </div>
+    
+</main>
 </body>
-</htmlte
+<script src="script.js"></script>
+<script src="CalcScrtipt.js"></script>
+
+</html>
