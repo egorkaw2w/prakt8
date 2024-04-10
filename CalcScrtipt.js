@@ -268,4 +268,6 @@ function storing(res) {
     results.push(res);
     var str = document.getElementById('history');
     str.textContent = results.join('\n');
+    var result = results.slice(-1);
+    document.getElementById('first').value = result;
 }
